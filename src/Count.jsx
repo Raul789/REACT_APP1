@@ -1,10 +1,4 @@
-import { useState } from "react";
+export default function Count({number}) {    
 
-export default function Count() {
-
-    const [number, setNumber] = useState(4);
-
-    return <span onClick={ () => {
-        setNumber(5);
-    }}>{number}</span>;
+    return <span className = "count">{number}</span> 
 }

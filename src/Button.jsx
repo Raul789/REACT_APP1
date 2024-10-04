@@ -1,7 +1,5 @@
-
-export default function Button(){
-    const handleClick = () => {
-        console.log("clicked");
-    }
-    return <button onClick={handleClick}>+</button>;
+export default function Button({setNumber}){
+    return <button onClick={() => {
+        setNumber((prev) => prev + 1);
+    }}>+</button>;
 }
