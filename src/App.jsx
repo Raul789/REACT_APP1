@@ -6,7 +6,10 @@ function App() {
     const [number, setNumber] = useState(0); 
     return( 
     <div className="app ">
-      <Count number={number} />
+      {
+        number < 3 ? <Count number={number} />
+        : null
+      }
       <Button setNumber={setNumber}/>
     </div>
     );
